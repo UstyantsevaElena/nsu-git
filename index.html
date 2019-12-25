@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NeuroStartUp</title>
+    <style>
+      header {
+        background-color: #ffffff;
+        box-shadow: 5px 10px 100px rgba(0, 0, 0, 0.5);
+      }
+      .navbar {
+        width: 900px;
+        height: 70px;
+        margin: auto;
+      }
+      .main-section {
+        padding: 50px;
+        font-size: 110%;
+        font-family: "Noto Sans", "Trebuchet MS", sans-serif;
+        color: #000000;
+        background-position: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #181818;
+        background-image: url(bg-image.jpg);
+        opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
+        transition: 0.3s; /*Скорость перехода состояния элемента*/
+        animation: show 0.3s 1; /* название анимации, её время и количество повторов*/
+        animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+        animation-delay: 0.5s; /* Задержка перед началом */
+      }
+      .about {
+        width: 750px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgba(255, 255, 255, 0.93);
+        mix-blend-mode: normal;
+        box-shadow: 5px 10px 200px rgb(23, 54, 117);
+        opacity: 0;
+        transition: 0.3s;
+        animation: show 0.3s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.8s;
+      }
+      .b-blue {
+        font-size: 150%;
+        font-weight: bold;
+        color: #285ECA;
+      }
+      ul {
+        list-style-type: circle;
+      }
+      @keyframes show {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="navbar">
+        <img src="logo.png" alt="nsu-logo" height="70" width="150">
+      </div>
+    </header>
+
+    <section class="main-section">
+      <div class="about">
+
+        <p>
+          <span class="b-blue">NeuroStartUp</span> - динамически развивающийся стартап, специализирующийся на поиске с использованием новейших технологий искусственного интеллекта.
+          <br>
+          <br>
+          Наши преимущества:
+          <br>
+          <ul>
+            <li>Высокая точность поиска</li>
+            <li>Высокая скорость поиска</li>
+            <li>Низкая цена</li>
+          </ul>
+        </p>
+        
+      </div>
+    </section>
+
+  </body>
+</html>
